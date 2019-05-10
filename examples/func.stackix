@@ -1,0 +1,15 @@
+      r2: remember 1
+          define x
+          remember @ret1
+          jump f_body_1
+    ret1: ;; retour de fonction
+          define r
+          jump _exit_3
+ _exit_3: exit
+f_body_1: ;; function body
+          remember 1
+          getvariable 0
+          add
+          undefine
+          swap
+          ujump
